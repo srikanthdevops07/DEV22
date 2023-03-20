@@ -1,0 +1,79 @@
+vi editor
+
+ 3 modes
+
+- command mode (delete lines,moving)
+- insert mode (writing the text in to files)
+
+	I - insert + begining of the line
+	i - inser mode
+	A - insert + end of the line 
+	a - insert + right side of the line
+	o
+- exit mode (to exit)
+	esc 
+	:wq - save and exit
+	:w - write
+	:q - quit
+
+
+======================
+:e! - to discard the unsaved changes(undo)
+x - to remove a letter where cursor is standing
+shift + x - to remove a letter leftside of the cusor
+dw - to delete a word
+dd - to delete entire line
+shift + d - to delete words toward the right
+/devops - to search a word from the files
+dG - deletes all the lines below the cursor
+d1G - deletes all the lines above the cursor
+:set nu - to set numbers for each line of the file
+30+shift+G - will take you tothe 30 th line
+:20,30d - will delete lines from 20 to 30
+gg - takes the cursor to the first line
+shift + G - takes the cursor to the last line
+yy - copy 
+p - paste
+5yy - to copy 5 lines
+:%s/devops/devops and aws - to replace words
+
+==========================================
+ file permissions
+
+r - read - 4
+w - write - 2
+x - execute - 1
+
+-rwxrw-r-- 1 root root   0 Sep  1 22:15 kumar
+drwxr-xr-x 3 root root  58 Sep  7 21:58 DEVOPS07
+
+
+user
+group
+other
+
+chmod 764 kumar
+
+===========================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
