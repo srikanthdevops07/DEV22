@@ -1,0 +1,160 @@
+
+
+grep -- global regular expression print
+
+	ps -ef | grep ec2-user
+	cat file24 | grep devops
+devops
+this is devops training session
+devops linux sesssions
+aws devops
+aws linux devops
+docker devops
+jenkins devops
+
+=> cat file24 | grep -c  devops
+   [root@dev1 ~]# cat file24 | grep -c  devops
+   7
+
+=> cat file24 | grep -i  devops ====> cases sensitve
+=>
+[root@dev1 ~]# cat file24 | grep -o devops
+devops
+devops
+devops
+devops
+devops
+devops
+devops
+
+=> [root@dev1 ~]# cat file24 | grep -n devops
+1:devops
+3:this is devops training session
+5:devops linux sesssions
+8:aws devops
+11:aws linux devops
+16:docker devops
+20:jenkins devops
+
+-------------------------------------------
+awk---
+cat file30
+empid   empname empsal  empaddress
+1       abc     10000   us
+2       bbc     20000   uk
+3       cbc     30000   aus
+[root@dev1 ~]#
+[root@dev1 ~]#
+[root@dev1 ~]# cat file30 | awk '{print $2}'
+empname
+abc
+bbc
+cbc
+[root@dev1 ~]# cat file30
+empid   empname empsal  empaddress
+1       abc     10000   us
+2       bbc     20000   uk
+3       cbc     30000   aus
+[root@dev1 ~]#
+[root@dev1 ~]#
+[root@dev1 ~]# cat file30 | awk '{print $2,$3}'
+empname empsal
+abc 10000
+bbc 20000
+cbc 30000
+
+
+----------------------------------------------------------
+sed -- stream editor
+
+cat file24 | sed 's/devops/aws/'
+aws
+
+this is aws training session
+
+aws linux sesssions
+
+
+aws aws
+
+
+aws linux aws
+
+
+kubernetes
+
+docker aws
+
+jenkins
+
+jenkins aws
+
+[root@dev1 ~]# cat file24 | sed 's/devops/kubernetes/; s/aws/azure/'
+kubernetes
+
+this is kubernetes training session
+
+kubernetes linux sesssions
+
+
+azure kubernetes
+
+
+azure linux kubernetes
+
+
+kubernetes
+
+docker kubernetes
+
+jenkins
+
+jenkins kubernetes
+
+
+
+
+-----
+
+ip address ==== internet protocol
+https/http
+
+dynamic ip
+	ipv4  ---- 65.2.143.96 --  4 billion devices
+	ipv6  ---- 2409:4070:2e04:7a4a:155d:8c61:6e4b:a26b ---- trillions 2
+
+static ip --- fb instgram
+
+====================================
+
+mac address
+
+
+5 devices --- wifi
+
+
+=====================
+
+dns -- domain name server
+
+
+==============================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
