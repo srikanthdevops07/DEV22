@@ -1,0 +1,130 @@
+
+permissions and ownerships
+
+r--read
+w--write
+x--execute
+
+d  --folder/directory
+-  ---> file
+
+drwxr-xr-x 2 root root   6 Nov 26 01:39 dev2
+-r--r--r-- 1 root root 596 Nov 21 02:07 file1
+-rw-r--r-- 1 root root   0 Nov 26 01:40 file2
+
+user
+group 
+other
+
+read can also be trated as "4"
+write can also be trated as "2"
+execute can also be trated as "1"
+
+chmod 700 file1
+
+-rwx------ 1 root root 596 Nov 21 02:07 file1
+
+chmod 721 file1
+-rwx-w---x 1 root root 596 Nov 21 02:07 file1
+
+-------------------------------------------------
+
+free -m --> ram space
+
+lscpu ---> cpu information
+
+cat /etc/os-release -- os information
+
+uniq file1 --- delete duplicate lines
+
+-----------------------------------------------------
+
+
+users and permissions 
+
+
+ useradd ashok----to add a new user
+  id ashok --- to check user created or not
+ cat /etc/passwd ---- to display all the users
+getent passwd
+
+
+groupadd dev --- to create group
+cat /etc/group --- listout all groups
+groups username --- displays all the groups assighned to a user
+
+useradd -g groupname username
+useradd -g dev hari
+
+useradd -G dev,test sameer 
+
+passwd ashok -- to change password
+
+usermod -a -G dev ashok -- to add an existing user to an existing group
+
+ gpasswd -d ashok dev --- to delete user from a group
+
+groupdel dev --- to delete group
+
+userdel -r user -- to delete user
+
+passwd -l user -- to lock user
+
+passwd -u user -- to unlock user
+
+=============================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
